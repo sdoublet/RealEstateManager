@@ -8,15 +8,17 @@
     android:fitsSystemWindows="true"
     tools:openDrawer="start">
 
-  <LinearLayout
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-      <include
-          layout="@layout/toolbar"
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"/>
 
-  </LinearLayout>
+        <include
+            layout="@layout/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
 
 </androidx.drawerlayout.widget.DrawerLayout>
