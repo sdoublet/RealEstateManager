@@ -43,6 +43,13 @@ dependencies {
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     annotationProcessor 'com.jakewharton:butterknife-compiler:10.1.0'
 
+    //LIFECYCLE
+    def lifecycle_version = "2.1.0"
+    // ViewModel and LiveData
+    implementation "androidx.lifecycle:lifecycle-extensions:$lifecycle_version"
+    annotationProcessor "androidx.lifecycle:lifecycle-compiler:$lifecycle_version"
+    // Test helpers for LiveData
+    testImplementation "androidx.arch.core:core-testing:$lifecycle_version"
     // ROOM
     def room_version = "2.2.0"
 
