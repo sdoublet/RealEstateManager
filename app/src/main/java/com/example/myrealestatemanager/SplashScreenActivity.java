@@ -18,7 +18,7 @@ public class SplashScreenActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
-        configureStatusBar();
+        // configureStatusBar();
         //Redirect to mainActivity after 3s
         //Handler Post Delayed
         new Handler().postDelayed(() -> {

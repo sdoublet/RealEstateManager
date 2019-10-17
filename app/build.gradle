@@ -9,6 +9,14 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [
+                        "room.schemaLocation":"$projectDir/schemas".toString(),
+                        "room.incremental":"true",
+                        "room.expandProjection":"true"]
+            }
+        }
     }
     buildTypes {
         release {
@@ -34,4 +42,14 @@ dependencies {
     implementation 'com.jakewharton:butterknife:10.1.0'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     annotationProcessor 'com.jakewharton:butterknife-compiler:10.1.0'
+
+    // ROOM
+    def room_version = "2.2.0"
+
+    implementation "androidx.room:room-runtime:$room_version"
+    annotationProcessor "androidx.room:room-compiler:$room_version"
+    implementation "androidx.room:room-rxjava2:$room_version"
+    implementation "androidx.room:room-guava:$room_version"
+    testImplementation "androidx.room:room-testing:$room_version"
+
 }
