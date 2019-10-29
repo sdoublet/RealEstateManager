@@ -1,4 +1,4 @@
-package com.example.myrealestatemanager;
+package com.example.myrealestatemanager.views;
 
 import android.content.Intent;
 import android.os.Build;
@@ -9,6 +9,8 @@ import android.view.WindowManager;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
+
+import com.example.myrealestatemanager.R;
 
 public class SplashScreenActivity extends AppCompatActivity {
 

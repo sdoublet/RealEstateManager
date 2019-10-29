@@ -1,4 +1,4 @@
-package com.example.myrealestatemanager;
+package com.example.myrealestatemanager.views;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import com.example.myrealestatemanager.R;
 
 import java.util.Locale;
 

@@ -1,4 +1,4 @@
-package com.example.myrealestatemanager;
+package com.example.myrealestatemanager.views;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,6 +13,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.navigation.NavController;
 import androidx.navigation.fragment.NavHostFragment;
 
+import com.example.myrealestatemanager.R;
 import com.google.android.material.navigation.NavigationView;
 
 import butterknife.BindView;
