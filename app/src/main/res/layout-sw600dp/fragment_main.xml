@@ -74,6 +74,7 @@
         app:layout_constraintTop_toBottomOf="@id/main_card_view" />
 
     <Button
+        android:id="@+id/button_simulator"
         android:layout_width="180dp"
         android:layout_height="wrap_content"
         android:background="@color/colorAccent"
