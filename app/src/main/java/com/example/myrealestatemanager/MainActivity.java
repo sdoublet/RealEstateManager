@@ -1,5 +1,6 @@
 package com.example.myrealestatemanager;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 
@@ -7,6 +8,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.navigation.NavController;
 import androidx.navigation.fragment.NavHostFragment;
@@ -54,7 +56,21 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
 
-
+        switch (menuItem.getItemId()){
+            case R.id.credit_calculator_menu:
+                Intent intentCalculator = new Intent(this, CalculatorActivity.class);
+                startActivity(intentCalculator);
+                break;
+            case R.id.profile_menu:
+                Intent intentProfile = new Intent(this, ProfileActivity.class);
+                startActivity(intentProfile);
+                break;
+            case R.id.settings_menu:
+                Intent intentSettings = new Intent(this, SettingActivity.class);
+                startActivity(intentSettings);
+                break;
+        }
+        drawerLayout.closeDrawer(GravityCompat.START);
         return true;
     }
 }
